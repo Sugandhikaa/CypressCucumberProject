@@ -2,12 +2,14 @@ Feature: Home Page
 
   Scenario: Verify the title of the homepage
     Given I am on the homepage
-    Then the title should be "Welcome to My E-Commerce Site"
+    Then the title should be "Swag Labs"
 
   Scenario: Verify the visibility of key elements on the homepage
     Given I am on the homepage
     Then I should see the main banner
-    And I should see the search bar
+    And I should see the UserName Input and Password
+    |UserName|password|
+    |standard_user|secret_sauce|
     And I should see the featured products section
 
   Scenario: Search for a product from the homepage

@@ -1,7 +1,7 @@
 class HomePage {
     // Locators for the elements on the homepage
     elements = {
-      mainBanner: () => cy.get(".main-banner"),
+      mainBanner: () => cy.get("div.login_logo"),
       searchBar: () => cy.get("#search-bar"),
       searchButton: () => cy.get("#search-button"),
       featuredProductsSection: () => cy.get(".featured-products"),

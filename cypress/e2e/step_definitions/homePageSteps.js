@@ -1,4 +1,5 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
+import { homePage } from '../pages/homePage';
 
 Given("I am on the homepage", () => {
   cy.visit("https://www.saucedemo.com/");
@@ -9,10 +10,10 @@ Then("the title should be {string}", (expectedTitle) => {
 });
 
 Then("I should see the main banner", () => {
-  cy.get(".main-banner").should('be.visible');
+ homePage.checkMainBannerVisible();
 });
 
-Then("I should see the search bar", () => {
+Then("I should see the UserName Input and Password", () => {
   cy.get("#search-bar").should('be.visible');
 });
 
