@@ -13,8 +13,8 @@ Then("I should see the main banner", () => {
  homePage.checkMainBannerVisible();
 });
 
-Then("I should see the UserName Input and Password", () => {
-  cy.get("#search-bar").should('be.visible');
+Then("I should see the UserName Input and Password text box", () => {
+  homePage.checkLoginElementsVisible();
 });
 
 Then("I should see the featured products section", () => {
